@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Manupulating</title>
+    </head>
+    <body>
+        <p id="first">This is a random text</p>
+        <button id="change">Click me</button>
+        <button id="dis">To disappear click me</button>
+        <script>
+            document.getElementById("change").onclick=function(){
+                document.getElementById("first").style.color="blue";
+                document.getElementById("first").style.fontSize="30px";
+            }
+            document.getElementById("dis").onclick=function(){
+                document.getElementById("first").style.display="none";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Changing website content</title>
+    </head>
+    <body>
+        <p id="para">awesome </p>
+        <button id="add">Click me</button>
+        <p id="empty"></p>
+        <button id="first">Click</button>
+        <script>
+            document.getElementById("add").onclick= function(){
+                document.getElementById("para").innerHTML="Javascript is "+document.getElementById("para").innerHTML;
+            }
+            document.getElementById("first").onclick=function(){
+                document.getElementById("empty").innerHTML= "<b>This is a random text</b>";
+            }
+        </script>
+    </body>
+</html>
