@@ -1,0 +1,1665 @@
+
+@import 'font-awsome.css';
+@import 'fonts.css';
+
+*{ margin: 0; padding: 0;  box-sizing: border-box;}
+html{ font-size: 101%; }
+body{ font-family: 'open_sansregular'; font-size: 14px; overflow-x: hidden; }
+header, section, footer{ float: left; width: 100%;}
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
+/*ul, li{ list-style: none;}*/
+.accessible-section ul, .accessible-section li, .menu-main-menu-container li, .footer-nav li{ list-style: none;}
+header{ background: #fff; padding: 10px 0; font-size: 15px;}
+.center{ text-align: center;}
+/*.main-wrapper{ width: 1200px; margin: 0 auto; position: relative;}*/
+.main-wrapper{ width: 1309px; margin: 0 auto; position: relative;}
+.col-2{ float: left; width: 50%; padding: 0 15px;}
+.col-12{  float: left; width: 100%; padding: 0 15px;}
+.col-3{ float: left; width: 33.33%; padding: 0 15px;}
+.row{ margin: 0 -15px;}
+
+/*Accessible*/
+.accessible-section{ border-bottom: 1px solid #ccc; font-family: 'open_sansregular'; background: rgba(255, 255, 255, 0.6); font-size: 15px;}
+#accessible a { text-decoration: none;}
+#accessible li { margin-bottom: 0;}
+#accessible .common-left {
+	float:left;
+	position:relative;
+}
+#accessible .common-left.common-left-ind li a{line-height:22px;}
+#accessible .common-left.common-left-ind li:first-child{ border-left: none; margin-left: 0;}
+
+
+#accessible .common-right {
+	float:right;
+	position:relative;
+}
+
+#accessible .common-left ul li {
+	float:left;
+	line-height:132%;
+	font-size:72%;
+	font-weight:600;
+	text-transform:uppercase;
+	height:36px;
+	padding-top:6px;
+}
+#accessible .common-left ul li.gov-india {
+	text-align:right;
+}
+#accessible .common-left ul li span {
+	display:block;
+	font-size:120%;
+}
+#accessible .common-left ul li.ministry {
+	padding-left:10px;
+	margin-left:10px;
+	border-left:1px solid #eeeeee;
+}
+#accessible .common-right ul li {
+	float:left;
+	position:relative;
+	height:36px;
+	border-left:1px solid #eeeeee;
+}
+#accessible .common-right ul li a {
+	display:block;
+	width:38px;
+	height:36px;
+	font-size:90%;
+	background-repeat:no-repeat;
+	background-position: center !important;
+}
+
+#accessible .common-right ul li.hover a {
+	background-color:#434343;
+}
+#accessible .sprite1>a, #accessible #header-nav>li>a{background-image:url(../images/sprite1.png);
+background-repeat:no-repeat;}
+#accessible .common-right ul li.ico-skip > a {
+	background-position:-124px 7px !important;
+}
+#accessible .common-right ul li.ico-skip.hover > a, #accessible .common-right ul li.ico-skip > a:focus {
+	background-position:-124px -27px !important;
+}
+#accessible .common-right ul li.ico-accessibility > a {
+	background-position:7px 7px !important;
+}
+#accessible .common-right ul li.ico-accessibility.hover > a, #accessible .common-right ul li.ico-accessibility > a:focus {
+	background-position:7px -27px !important;
+}
+#accessible .common-right ul li.ico-social > a {
+	  background-position: -28px 7px !important;
+}
+#accessible .common-right ul li.ico-social.hover > a, #accessible .common-right ul li.ico-social > a:focus {
+	background-position:-28px -27px !important;
+}
+#accessible .common-right ul li.ico-login > a {
+	background-image:url(../images/ico-login.png);
+}
+#accessible .common-right ul li.ico-login.hover > a {
+	background-image:url(../images/ico-login.png);
+}
+#accessible .common-right ul li.ico-site-search > a {
+	background-position:-59px 7px !important;
+}
+#accessible .common-right ul li.ico-site-search.hover > a, #accessible .common-right ul li.ico-site-search > a:focus {
+	background-position:-59px -27px !important;
+}
+#accessible .common-right ul li.ico-sitemap > a {
+	background-position:-90px 7px !important;
+}
+#accessible .common-right ul li.ico-sitemap.hover > a, #accessible .common-right ul li.ico-sitemap > a:focus {
+	background-position:-90px -27px !important;
+}
+#accessible .common-right ul .language>a{background-image: none !important;}
+#accessible .common-right ul li.hindi a {
+	font-size:12px;
+	font-weight:600;
+	background:none;
+	line-height:35px;
+	padding:0px 7px;
+	width:auto;
+}
+#accessible .common-right ul li.hindi:hover a,
+#accessible .common-right ul li.hindi a:focus { color:#fff; background-color:#434343; }
+#accessible .common-right ul li a, #accessible .common-right ul li.hover a {
+	opacity:1;
+}
+#accessible .common-right ul li ul {
+	position:absolute;
+	top:36px;
+	right:0px;
+	z-index:9999;
+	box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+	background:#fff;
+	padding:0px 0px;
+	visibility:hidden;
+	background:#333;
+}
+#accessible .common-right ul li ul.search-drop {
+	visibility:visible;
+	display:none;
+}
+#accessible .common-right ul li ul li {
+	float:none;
+	position:relative;
+	height:auto;
+	padding:0px 0px;
+	border-left:0px solid #eeeeee;
+}
+/*#accessible .common-right ul li.hover ul{visibility:visible;}*/
+#accessible .common-right li:hover > ul,
+#nav .main-menu li.hover > ul,
+#accessible .common-right a:focus + ul,
+#accessible .common-right .hover a:focus {
+	visibility:visible;
+}
+#accessible .common-right li:hover>ul,
+#accessible .common-right li.hover>ul,
+#accessible .common-right a:focus+ul,
+#accessible .common-right .hover a:focus {
+	visibility:visible;
+}
+#accessible .common-right ul li.ico-accessibility ul {
+	height:auto;
+}
+#accessible .common-right ul li.ico-social ul {
+	height:auto;
+	padding:3px 0px;
+}
+#accessible .common-right ul li.ico-social ul  li a{ color: #fff;}
+#accessible .common-right ul li.ico-accessibility ul li {
+	border-top:1px solid #434343;
+}
+#accessible .common-right ul li.ico-accessibility ul li a {
+	background:none;
+	color: #fff;
+	display: inline-block;
+	height: auto;
+	line-height: 22px;
+	margin-top: 0px;
+	width: 38px;
+	text-align:center;
+	padding:3px 0px;
+}
+#accessible .common-right ul li.ico-accessibility ul li:first-child a {
+	margin-top:0px;
+}
+#accessible .common-right ul li.ico-social ul li {
+	width:38px;
+	text-align:center;
+	padding:3px 0px;
+}
+#accessible .common-right ul li.ico-social ul li a {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	display: inline-block;
+	height: 22px;
+	margin-top: 0px;
+	width: 22px; font-size: 15px;
+}
+#accessible .common-right ul li.ico-social ul li a:focus {
+	outline:1px dotted #FFF;
+}
+#accessible .common-right ul li.ico-social ul li:first-child a {
+	margin-top:0px;
+}
+#accessible .common-right ul li.ico-site-search input[type="text"] {
+	background: #fff url("../images/goi-search-bg.png") no-repeat scroll 150px 12px !important;
+	border:2px solid #434343;
+	font-weight: 600;
+	height: 36px;
+	line-height: 34px;
+	padding: 0 40px 0 8px;
+	width: 270px;
+}
+#accessible .common-right ul li.ico-site-search input[type="text"]:focus {
+	background:#fff !important;
+}
+#accessible .common-right ul li.ico-site-search ul {
+	padding:0px;
+	height:36px;
+}
+#accessible .common-left ul li.gov-india a:hover,
+#accessible .common-left ul li.ministry a:hover {
+	color:#686868 !important;
+}
+#accessible .common-left ul li.gov-india a:focus,
+#accessible .common-left ul li.ministry a:focus {
+	color:#686868 !important;
+}
+#accessible .common-left a, #accessible .common-left li {
+	color:#000;
+}
+#accessible .common-left a {
+	display:inline-block;
+}
+#accessible .common-left a:focus {
+	color:#000 !important;
+}
+#accessible .search-drop input[type='text'] {
+	border:0px solid #eeeeee;
+	height:36px;
+	padding:0px 40px 0px 8px;
+	width:200px;
+}
+#accessible .search-drop {
+	position:relative;
+}
+#accessible .search-drop a {
+	visibility:hidden;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+#accessible .bttn-search {
+	width:38px;
+	height:36px;
+	cursor:pointer;
+	border:0px;
+	background-color:#006837;
+	line-height:27px;
+	text-align:center;
+	overflow:hidden;
+	text-indent:-200px;
+	font-size:1px;
+	background-image:url(../images/ico-search.png);
+	background-repeat:no-repeat;
+	background-position: center;
+	position:absolute;
+	top:0px;
+	right:0px;
+	opacity:1;
+  margin-top: 0;
+}
+#accessible .bttn-search:hover {
+	opacity:0.8;
+}
+
+.equal-height > [class^='col-'], .equal-height > .equal-height-item { display: -webkit-box; display: -ms-flexbox; display: flex;}
+.logo{float: left;}
+.logo img{ float: left;}
+.header-lft-section{ float: left;}
+.header-lft-section img, .header-lft-section span{ display: inline-block; vertical-align: middle;}
+.header-rgt-section{ float: right;}
+.header-rgt-section img, .header-rgt-section span{ display: inline-block; vertical-align: middle;}
+.slider-cntr{ position: relative;}
+.green-wpr{ background: #006837; padding: 30px 0; }
+.right-border{ position: relative; display: inline-block; width: 100%;}
+.right-border:after{ content: ""; position: absolute; left: 50%; top: 0; bottom: 5px; width: 5px; border-right: 2px dashed #fff;}
+.contentOne{ color: #fff; min-height: 230px; border-bottom: 2px dashed #fff;}
+.title{ font-size: 1.5em; font-weight: 800; font-family: 'open_sansbold'; margin: 0 0 15px 0; text-transform: uppercase;}
+.title span{ border-bottom: 2px solid #fff;}
+.contentTwo{ color: #fff; margin-top: 25px;}
+.contentOne p, .contentTwo p{ font-size: 1.3em; line-height: 30px; color: #fff; font-family: 'abelregular'; margin: 0;}
+.angle-border{ float: left; width: 100%; background-image: url(../images/bracket.png); background-repeat: no-repeat; background-position: center; height: 100px; margin-top: 5px; background-size:contain;}
+.area-cntr {padding: 0; margin: 0; text-align:center;}
+.area-cntr li{color: #fff; font-family: 'abelregular'; display:inline-block; position:relative; margin:0 12px;}
+.area-cntr li:first-child{ margin-left:0;}
+.area-cntr li:last-child{ margin-right:0;}
+.area-cntr li:before{
+	position:absolute;
+	content:"";
+	left:-15px;
+	top:8px;
+	width:6px;
+	height:6px;
+	border-radius:50%;
+	background-color:#ffffff;
+}
+.area-cntr li p {
+	font-size: 1.2em;
+	margin-bottom: 0;
+	height: 45px;
+	overflow: hidden;
+}
+.activity-section{ background: #45767F; padding: 30px 0;}
+.activity-section h1{ color: #fff; }
+.pdf-view-container { border: 2px solid #FCEE21; box-shadow: 0 0 15px -4px rgba(0, 0, 0, 0.8); min-height: 500px; text-align: center; margin-top: 25px;}
+.pdf-view-container object { height: 700px;}
+object, embed { max-width: 100%;}
+.loacation-section{ background: #FCEE21; padding: 30px 0;}
+.flex-wrap{ display: flex; flex-wrap: nowrap;}
+.flex-wrap-item{ width: 100%; text-align: center;}
+.flex-wrap-item p{ font-size: 1.2em; font-weight: 600; font-family: 'abelregular'; color: #941214; text-transform: uppercase; margin-bottom: 15px;}
+.location-itemcntr{ display: grid; align-items: center; margin: 0 auto; width: 180px; height: 200px; text-align: center; border: 2px solid #719F52; border-radius: 25px;}
+.goal-section{ background: #404040; padding: 30px 0; color: #fff;}
+.flex-wrap-item.goal-wpr{ margin: 0 25px;}
+.goal-wpr big{ font-size: 4em; font-family: 'open_sansbold'; font-weight: 800; margin: 17px 0; display: inline-block;}
+.goal-wpr p{ font-size: 1.25em; font-family: 'abelregular'; color: #fff; font-weight: 300; line-height: 30px;}
+.video-section iframe{ width: 100%; height: 500px;}
+.testimonial-section{ background: #005239; padding: 30px 0;}
+.testimonial-section .title{ color: #fff;}
+footer{ border-top: 10px solid #FCEE21; background: rgba(0, 0, 0, 0.85); padding: 15px 0;}
+.footer-nav{ padding: 0;}
+.footer-nav li{ display: inline-block;}
+.footer-nav li a{ padding: 0px 7px; border-right: 1px solid #fff; color: #fff; text-decoration: none; font-size: 15px;}
+.footer-nav li:last-child a{  border-right: none;}
+.footer-nav li a:hover{ text-decoration: underline;}
+.social-cntr{ text-align: center; margin-top: 25px;}
+.social-cntr a{ display: inline-block; margin: 0 5px; text-decoration: none;}
+
+/*Navigation*/
+.main-menu-section{ background: #333;}
+#nav .main-menu ul > li {position:relative; border-right: 1px solid rgba(182, 59, 26, 0.3); font-family: 'open_sansregular';}
+/*
+#nav .main-menu ul > li > a{ line-height:40px; padding:0px 12px !important; color:#000;} fawwad comments*/
+#nav .main-menu ul > li > a{ line-height:40px; padding:0px 12px !important; color:#000;}
+#nav .main-menu ul > li > a.home{background: #b63b1a; color: #fff;}
+
+ul#primary-menu li a i.fa-home{ font-size:125%;}
+#nav .sub-menu li .sub-sub-menu{ position:absolute; width:250px; left:100%; top:-2px; visibility:hidden; background: #149131; border: 1px solid rgba(0, 0, 0, 0.25);}
+#nav .sub-menu li .sub-sub-menu li{border-top: 1px solid rgba(0, 0, 0, 0.2) !important;}
+#nav .sub-menu li.hover > .sub-sub-menu {visibility:visible;}
+#nav .main-menu ul.sub-menu > li i{float:right; font-size:16px; margin-top: 11px;}
+
+#nav .main-menu ul > li > a:focus { background:#b63b1a;}
+#nav .main-menu .sub-menu li.hover .sub-sub .sub-sub-menu{visibility:visible;}
+
+#nav.wrapper .showhide { display: none; float: right;	height: 30px;	outline: 0 none; padding: 0; position: absolute; right: 5%;	text-decoration: none; top: -80px; width: 25px; z-index: 1000;}
+#nav.wrapper .showhide em {	background: #777 none repeat scroll 0 0; float: right; height: 3px; margin: 5px 0 0; width: 25px;}
+#nav .main-menu {clear:both;}
+#nav .nav-menu { display: flex; flex-wrap: nowrap; background: #333; list-style: outside none none; margin: 0; padding: 0;   position: relative; z-index: 15;}
+.nav-item { list-style: none; display: inline-block; padding: 0; margin: 0;}
+#nav .main-menu ul > li {	display: inline-block; float: left;}
+#nav .main-menu ul > li, #nav #overflow_menu ul li { border-right: 1px solid rgba(0, 0, 0, 0.1);}
+#nav .main-menu ul > li { border-right: 1px solid rgba(255, 255, 255, 0.20); margin-bottom: 0; width: 100%; text-align: center;}
+.nav-item > a { position: relative; display: inline-block; padding: 0.5em 1em; margin: 0 0 -1px 0;}
+#nav .main-menu  ul > li:first-child > a { padding: 11px 24px 12px 24px;}
+#nav .main-menu  ul > li > a  { padding: 11px 16px 12px; display: block;}
+#nav .main-menu ul > li a { font-weight: 600; text-decoration: none;}
+#nav .main-menu ul > li > a { color: #FFF; font-weight: normal; font-size: 15px;}  /* fawwad 15px;*/
+#nav .main-menu  ul > li a.home { padding: 9px 22px 10px; font-size: 17px;}
+#nav .main-menu  ul > li.current-menu-item > a, #nav .main-menu  ul > li > a:focus, #nav .main-menu  ul > li:hover > a,
+#nav .main-menu  ul > li > a:hover, #nav .main-menu  ul > li > a.home, #nav .main-menu  ul > li.current-menu-ancestor a,
+.nav-item > a.open { background: #149131;	color: #fff ;}
+.nav-item a .indicator { display:inline-block; padding-left:5px; font-weight:300; font-size:99%;}
+#nav .sub-menu { margin-left: 0px;}
+#nav .sub-menu { position: absolute; visibility: hidden; display: none; top: 100%; margin-top: 7px; padding: 0.5em 1em;	
+  z-index:99999999999; left:0;}
+#nav .sub-menu { background-color: rgba(255, 255, 255, 0.9);}
+#nav .sub-menu { background-color: #149131;}
+#nav .main-menu  ul > li.hover .sub-menu { visibility: visible;	display: block;	left: 0;}
+#nav .main-menu  ul > li:last-child {	border-right: none;}
+#nav .sub-menu li{ text-align: left !important;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  #nav .main-menu  ul > li > a { padding: 11px 16px 12px;}
+	#nav .main-menu  ul > li a.home {	padding: 9px 29px 10px;}
+}
+#nav .sub-menu {display: inline-block; margin: 0; padding: 0; vertical-align: top; width: 100%;}
+#nav .sub-menu { width:25%;}
+#nav .sub-menu { min-width:250px;}
+#nav .sub-menu li { display: block; list-style-type: none; margin: 0; padding: 0;}
+#nav .sub-menu > li { border: medium none !important; display: block; font-size: 97%;}
+#nav .sub-menu li { width: 100%;}
+#nav .main-menu .sub-menu li+li { border-top: 1px solid rgba(0, 0, 0, .1) !important;}
+#nav .sub-menu li a { font-weight: 400 !important;}
+#nav .sub-menu li a { font-weight: 400;}
+#nav .main-menu .sub-menu li a, #nav .main-menu  ul ul > li:first-child > a { font-weight:400; display:block;	padding: 8px 10px; background:none; color:#fff; text-transform:none; border:none;}
+#nav .main-menu .sub-menu li a { background: rgba(0, 0, 0, 0) none repeat scroll 0 0 ; font-weight:600 ;}
+#nav .main-menu .sub-menu li a:focus, #nav .main-menu .sub-menu li a:hover, #nav .main-menu .sub-menu li.current-menu-item a { outline: 1px dotted hsl(0, 0%, 100%); text-decoration: none; background: #01651a;}
+
+/*inner page start*/
+body.inr-cntnt-bg{ background-image: url(../images/greene-bg.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center;}
+.inner-cntr{ min-height: 500px; border-top: 1px solid #dcdcdc;}
+.inr-page-wpr{ display: inline-block; width: 100%; background: rgba(255, 255, 255, 0.8); padding: 20px; margin: 20px 0; min-height: 460px;}
+.color-blue{ color: #0071BC;}
+.color-green{ color: #01651a;}
+.inr-page-wpr .title.inner-title{ background: #44dc4d; padding: 10px;}
+h2.inr-sub-title{ margin-bottom:15px; margin-top: 15px; font-size: 1.2em;}
+h2.inr-sub-title span{ text-decoration: underline;}
+.inr-liststyle{ padding-left: 20px;}
+.inr-liststyle li{ list-style: disc;}
+p, li{ line-height: 22px; font-size: 0.9em; margin-bottom: 10px;}
+.dif-brandlogo{ display: inline-block; width: 100%; margin-top: 15px;}
+.dif-brandlogo a{ margin-right: 20px; display:block;}
+.dif-brandlogo li{ display:inline-block;}
+.dif-brandlogo a img{ height: 50px;}
+
+/*Gallry tabs start*/
+ul.tabs{ margin: 0; padding: 0; float: left; list-style: none; height: 46px; border-bottom: 1px solid #b7b7b7;	width: 100%;}
+ul.tabs li{ float: left; margin: 0; cursor: pointer; padding: 11px 22px; border-top: 1px solid #666; border-left: 1px solid #666; background-color: #333;	color: #fff; overflow: hidden; position: relative; font-size: 1.2em; font-family: 'abelregular'; font-weight: 600;}
+.tab_last { border-right: 1px solid #b7b7b7; }
+ul.tabs li:hover{ color: #44dc4d;}
+ul.tabs li.active{ background-color: transparent; color: #333; border-color: #b7b7b7; border-bottom: 1px solid #fff; display: block;}
+.tab_container { border: 1px solid #b7b7b7; border-top: none; clear: both; float: left; width: 100%; overflow: auto;}
+.tab_content, .tab_content1 { padding: 20px; display: none; font-family: 'open_sanssemibold';}
+.tab_drawer_heading, .tab_drawer_heading1 { display: none; }
+
+
+
+@media screen and (max-width: 480px) {
+/*	.tabs, .tabs1 {	display: none;}
+	.tab_drawer_heading, .tab_drawer_heading1 { display: inline-block; width: 100%;
+		background-color: #ccc; color: #333; border-top: 1px solid #b7b7b7;	margin: 0; padding: 7px 20px; cursor: pointer;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	.d_active { background-color: #666;	color: #fff;}
+*/}
+
+.ctnt-wpr{ margin-top: 25px;}
+.fancybox-overlay-fixed{ background: rgba(0, 0, 0, 0.7) !important;}
+.gallery-cntr{ margin-left: -15px; margin-top: 15px; overflow:hidden;}
+.gallery-cntr .gallery-thumb{ float: left; width: calc(33.33% - 15px); margin: 0 0 15px 15px; text-decoration: none;}
+.gallery-cntr .gallery-thumb > img{ width: 100%;}
+.your-states{ float: left; width: 25%; padding-right: 20px; min-height: 300px; font-family: 'abelregular';}
+.actvty-your-city{ float: right; width: 75%; padding-left: 20px; position: relative; min-height: 510px; font-family: 'abelregular';}
+.actvty-your-city h3{ font-size: 1.2em;}
+.actvty-your-city p, .author-location{ font-family: 'open_sansregular';}
+.actvty-your-city:before{ content: ""; border-left: 3px solid #ccc; position: absolute; left: 0; top: 0; bottom: 0;}
+.activity-title{ border-bottom: 2px solid #44dc4d; padding-bottom: 5px; margin-bottom: 20px; font-size: 1.3em;}
+.your-states ul li, ul.tabs1 li{ margin-bottom: 0;}
+.your-states ul li a, ul.tabs1 li{ text-decoration: none; font-size: 1.15em; padding: 10px 0 10px 20px; display: inline-block; width: 100%;   position: relative; color: #4E4C4C; font-weight: 600; transition: 0.2s ease-in;}
+.your-states ul li a:after, ul.tabs1 li:after{ position: absolute; left: 5px; content: "\f101"; font: normal normal normal 1em/1 FontAwesome;    top: 29%; color: #22c82c;}
+.your-states ul li a:hover, .your-states ul li a.active, ul.tabs1 li:hover, ul.tabs1 li.active{ color: #000; background: rgba(4, 4, 4, 0.12);}
+.button, input[type=submit], button{ background: #01651a; color: #fff; text-decoration: none; padding: 5px 12px; margin-top: 10px; display: inline-block; transition: all 0.2s ease-in; border: 1px solid #01651a; cursor: pointer;}
+.button:hover, input[type=submit]:hover, button:hover { background: #05a92e;}
+.content-post{ padding-bottom: 15px; margin-bottom: 15px; border-bottom: 1px solid #ccc;}
+.content-post:last-child{ border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.author-location{ display: inline-block; width:100%; margin-top: 15px;}
+.author-location .author {
+	display: block;
+	margin: 0 0 10px;
+}
+/*.author-location .location{ float:right;}
+*/
+.form-cntr{ width: 600px; padding: 20px; box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5); margin: 35px auto;}
+.testimonila-wpr{ /*margin-left: -35px;*/ margin-top: 40px;}
+.testo-wdgt-cntr{ float: left; background: #fff; width: calc(100% - 35px); height: 300px; border-radius: 10px; position: relative; margin-left: 17.5px; margin-right: 17.5px; font-family: 'open_sansregular';}
+.testo-cntnt{ display: inline-block; padding: 20px 45px 20px 20px; position: relative; max-height: 200px; overflow: hidden;}
+.testo-autor{ position: absolute; bottom: 0; left: 0; right: 0; height: 90px; padding: 20px 20px 20px 95px; background: #333; color: #fff; border-radius: 0 0 10px 10px;}
+.testo-autor span{ position: absolute; left: 20px; top: 15px; width: 62px; background: #fff; height: 62px; border-radius: 50%; overflow: hidden;}
+.testo-autor span img{ width: 100%; height: 100%;}
+.testo-autor big{ font-size: 1.1em; margin-bottom: 5px; display: inline-block; font-weight: 600;}
+.testo-quote{ position: absolute; right: -8px; top: 20px;}
+.testimonialslider li:nth-child(2n+1) .testo-autor{ background: #85bc0e;}
+.testimonialslider li:nth-child(2n+2) .testo-autor{ background: #0d7cfb;}
+.testimonialslider li:nth-child(2n+3) .testo-autor{ background: #cf7c70;}
+.testimonialslider li:nth-child(2n+4) .testo-autor{ background: #f1c224;}
+.testimonialslider li:nth-child(2n+5) .testo-autor{ background: #9300d3;}
+.testimonialslider li:nth-child(2n+6) .testo-autor{ background: #00c0be;}
+.testimonila-wpr .flex-control-paging li a{ width: 200px; height: 5px; background: #fff; margin-bottom:25px; }
+.testimonila-wpr .flex-control-paging li a:hover, .testimonila-wpr .flex-control-paging li a.flex-active{ background: #FF4E24;}
+
+.marquee-cntr { padding: 10px; background: rgba(0, 0, 0, 0.14); border: 1px solid #ccc; box-sizing: border-box; margin-top: 11px; display: inline-block; width: 100%; color: #2700ff; font-weight: 600;}
+.your-states.download-cntr ul li a:after, ul.tabs1 li:after { position: inherit; content: ""; font: inherit;}
+.your-states.download-cntr ul li a, ul.tabs1 li{ padding-left: 30px;}
+.your-states.download-cntr ul li a i, ul.tabs1 li i { position: absolute; left: 5px; top: 29%; color: #22c82c;}
+.download-list-cntr{ margin: 15px 0 0 -15px; font-family: 'open_sansregular';}
+.download-list-cntr ul li{ float: left; width: calc(50% - 20px); margin: 0 0 5px 15px;  }
+.download-list-cntr ul li a{ display: block; padding: 5px 5px 5px 20px; position: relative; color: #333; text-decoration: none;}
+.download-list-cntr ul li a:hover{ text-decoration: underline; color: #22c82c;}
+.download-list-cntr ul li a:before{ position: absolute; left: 5px; content: "\f101"; font: normal normal normal 1em/1 FontAwesome; top: 29%; color: #22c82c;}
+.ctnt-wpr.meaida-wpr{ display: inline-block; width: 100%;}
+.gallery-thumb.audio-cntr{ background: #333; padding: 15px; border-radius: 10px; color: #fff; text-align: center;}
+.gallery-thumb.audio-cntr audio{ width: 100%; margin-bottom: 10px;}
+.gallery-thumb.creative-thumb{ width: calc(20% - 15px);}
+.gallery-thumb.creative-thumb p{ text-decoration: none; color: #000; text-align: center;}
+
+.document-link-cntr{ display: inline-block; width: 100%;}
+.document-link-cntr .download-list-cntr{ margin: 0;}
+.document-link-cntr .download-list-cntr ul li {width:100%; margin: 0; float:none;}
+
+.gallery-cntr.gallery-page .gallery-thumb{ box-shadow: 0 0 0px 2px rgba(0, 0, 0, 0.7); position: relative; transition: all 0.3s ease-in; overflow: hidden;}
+.gallery-cntr.gallery-page .gallery-thumb:hover:before{ content: ""; position: absolute; left: 0; top: 0; right: 0; bottom: 0; background: rgba(19, 166, 56, 0.63); z-index: 1;}
+.gallery-cntr.gallery-page .gallery-thumb img{ float: left; transition: all 0.3s ease-in;}
+.gallery-cntr.gallery-page .gallery-thumb:hover img{ transform: rotate(7deg) scale(1.3 , 1.3);}
+.gallery-cntr.gallery-page .gallery-thumb:hover:after{ content: "\f00e"; font: normal normal normal 34px/1 FontAwesome;   position: absolute; z-index: 2; left: 46%; top: 42%; font-size: 34px; color: #fff;}
+.ctnt-wpr.vertical-tabs{ display: inline-block; width: 100%;}
+.vertical-tabs .tabs1.your-states{ float: left; width: 25%;}
+.vertical-tabs .tabs1 li{ width: 100%;}
+.vertical-tabs .tab_container.actvty-your-city{ clear: inherit; min-height: 400px; margin-bottom: 15px; border: 0;}
+ul.tabs1{ height: auto; border-bottom: 0;}
+ul.tabs1 li{ background-color: transparent; border: 0; color: #333; cursor: pointer;}
+.tab_content1{ padding: 0;}
+.ctnt-wpr.vertical-tabs .tab_content1{ font-family: 'abelregular';}
+
+.ctnt-wpr.coll-centr-wpr{ display: inline-block; width: 100%;}
+
+@media only screen and (min-width:992px) and (max-width:1050px)
+{
+	.header-lft-section{
+		font-size:14px;
+	}
+	.state-details{ float: right;
+	width: 46%;
+	min-height: 580px;
+	color: #333;
+	}
+
+.map-cntr{ float: left; width: 505px; height: 580px; position: relative;  background-repeat: no-repeat;}
+
+.map-cntr .states li{ position: absolute; font-size: 10px; text-align: center; cursor: pointer;}
+.map-cntr .states li img{ margin-top: -4px; transition: 0.2s ease-in;}
+.map-cntr .states li:hover img{ transform: scale(1.3, 1.3);}
+.map-cntr .states li.jammu_and_kashmir{ left: 110px; top: 37px;}
+.map-cntr .states li.ladhak{ left: 110px; top: 40px;}
+.map-cntr .states li.punjab{ left: 104px; top: 102px;}
+.map-cntr .states li.himachal_pradesh{ left: 137px; top: 79px;}
+.map-cntr .states li.uttarakhand{ left: 179px; top: 113px;}
+.map-cntr .states li.uttaranchal{ left: 179px; top: 113px;display: none;}
+.map-cntr .states li.rajasthan{ left: 75px; top: 175px;}
+.map-cntr .states li.haryana{ left: 122px; top: 137px;}
+.map-cntr .states li.uttar_pradesh{ left: 200px; top: 170px;}
+.map-cntr .states li.gujarat{ left: 60px; top: 245px;}
+.map-cntr .states li.madhya_pradesh{ left: 142px; top: 237px;}
+.map-cntr .states li.bihar{ left: 277px; top: 205px;}
+.map-cntr .states li.jharkhand{ right: 190px; top: 247px;}
+.map-cntr .states li.west_bengal{ right: 135px; top: 260px;}
+.map-cntr .states li.assam{ right: 52px; top: 196px;;}
+.map-cntr .states li.manipur{ right: 40px; top: 225px;}
+.map-cntr .states li.maharashtra{ left: 95px; bottom: 195px;}
+.map-cntr .states li.chhattisgarh{ left: 210px; top: 290px;}
+.map-cntr .states li.telangana{ left: 190px; bottom: 190px;}
+.map-cntr .states li.odisha{ right: 187px; bottom: 227px;}
+.map-cntr .states li.karnataka{ left: 130px; bottom: 90px;}
+.map-cntr .states li.puducherry{ left: 175px; bottom: 105px;}
+.map-cntr .states li.tamil_nadu{ left: 168px; bottom: 60px;}
+.map-cntr .states li.delhi{ left: 168px; top: 143px;}
+.map-cntr .states li.goa{ left: 98px; bottom: 135px;}
+.map-cntr .states li.andhra_pradesh{ left: 155px; bottom: 150px;}
+.map-cntr .states li.kerala{ left: 129px; bottom: 55px;}
+.map-cntr .states li.sikkim{ right: 137px; top: 160px;}
+.map-cntr .states li.meghalaya{ right: 75px; top: 233px;}
+.map-cntr .states li.tripura{ right: 87px; top: 202px;}
+.map-cntr .states li.mizoram{ right: 57px; top: 260px;}
+.map-cntr .states li.nagaland{ right: 20px; top: 187px;}
+.map-cntr .states li.arunachal_pradesh{ right: -41px; top: 162px;} 
+/*.map-cntr .states li.arunachal_pradesh{ right: 0px; top: 140px;} */
+.map-cntr .states li.chandigarh{ left: 122px; top: 88px;}
+.map-cntr .states li.daman_and_diu{ left: 50px; bottom: 245px;}
+.map-cntr .states li.dadra_and_nagar_haveli{ left: 30px; bottom: 210px;}
+.map-cntr .states li.lakshadweep{ left: 50px; bottom: 60px;}
+.map-cntr .states li.andaman_and_nicobar_islands{ right: 15px; bottom: 85px;}
+
+.map-cntr .states li.hide{ display: none !important;}
+}
+
+@media only screen and (min-width:1051px) and (max-width:1600px)
+{
+	.state-details{ float: right;
+	width: 46%;
+	min-height: 580px;
+	color: #333;
+	}
+.map-cntr{ float: left; width: 505px; height: 580px; position: relative;  background-repeat: no-repeat;}
+
+.map-cntr .states li{ position: absolute; font-size: 10px; text-align: center; cursor: pointer;}
+.map-cntr .states li img{ margin-top: -4px; transition: 0.2s ease-in;}
+.map-cntr .states li:hover img{ transform: scale(1.3, 1.3);}
+.map-cntr .states li.jammu_and_kashmir{ left: 110px; top: 37px;}
+.map-cntr .states li.ladhak{ left: 110px; top: 40px;}
+.map-cntr .states li.punjab{ left: 104px; top: 102px;}
+.map-cntr .states li.himachal_pradesh{ left: 137px; top: 79px;}
+.map-cntr .states li.uttarakhand{ left: 179px; top: 113px;}
+.map-cntr .states li.uttaranchal{ left: 179px; top: 113px;display: none;}
+.map-cntr .states li.rajasthan{ left: 75px; top: 175px;}
+.map-cntr .states li.haryana{ left: 122px; top: 137px;}
+.map-cntr .states li.uttar_pradesh{ left: 200px; top: 170px;}
+.map-cntr .states li.gujarat{ left: 60px; top: 245px;}
+.map-cntr .states li.madhya_pradesh{ left: 142px; top: 237px;}
+.map-cntr .states li.bihar{ left: 277px; top: 205px;}
+.map-cntr .states li.jharkhand{ right: 190px; top: 247px;}
+.map-cntr .states li.west_bengal{ right: 135px; top: 260px;}
+.map-cntr .states li.assam{ right: 52px; top: 196px;;}
+.map-cntr .states li.manipur{ right: 40px; top: 225px;}
+.map-cntr .states li.maharashtra{ left: 95px; bottom: 195px;}
+.map-cntr .states li.chhattisgarh{ left: 210px; top: 290px;}
+.map-cntr .states li.telangana{ left: 190px; bottom: 190px;}
+.map-cntr .states li.odisha{ right: 187px; bottom: 227px;}
+.map-cntr .states li.karnataka{ left: 130px; bottom: 90px;}
+.map-cntr .states li.puducherry{ left: 175px; bottom: 105px;}
+.map-cntr .states li.tamil_nadu{ left: 168px; bottom: 60px;}
+.map-cntr .states li.delhi{ left: 168px; top: 143px;}
+.map-cntr .states li.goa{ left: 98px; bottom: 135px;}
+.map-cntr .states li.andhra_pradesh{ left: 155px; bottom: 150px;}
+.map-cntr .states li.kerala{ left: 129px; bottom: 55px;}
+.map-cntr .states li.sikkim{ right: 137px; top: 160px;}
+.map-cntr .states li.meghalaya{ right: 75px; top: 233px;}
+.map-cntr .states li.tripura{ right: 87px; top: 202px;}
+.map-cntr .states li.mizoram{ right: 57px; top: 260px;}
+.map-cntr .states li.nagaland{ right: 20px; top: 187px;}
+.map-cntr .states li.arunachal_pradesh{ right: -41px; top: 162px;} 
+/*.map-cntr .states li.arunachal_pradesh{ right: 0px; top: 140px;} */
+.map-cntr .states li.chandigarh{ left: 122px; top: 88px;}
+.map-cntr .states li.daman_and_diu{ left: 50px; bottom: 245px;}
+.map-cntr .states li.dadra_and_nagar_haveli{ left: 30px; bottom: 210px;}
+.map-cntr .states li.lakshadweep{ left: 50px; bottom: 60px;}
+.map-cntr .states li.andaman_and_nicobar_islands{ right: 15px; bottom: 85px;}
+
+.map-cntr .states li.hide{ display: none !important;}
+}
+/*.state-details{ float: right; width: 535px; min-height: 580px; color: #333;}*/
+.state-details .title{ margin-bottom: 5px;}
+.state-dtls-list{ margin-top: 10px; max-height: 500px; overflow-y: auto;}
+.state-dtls-list li{ margin-top: 12px; margin-bottom: 0; line-height: 18px; border-bottom: 1px solid rgba(0, 0, 0, 0.05); padding-bottom: 12px; font-size: 0.8em; padding-left: 12px; position: relative;}
+/*.state-dtls-list li:before{ content: "\f0da"; font: normal normal normal 1em/1 FontAwesome;   position: absolute; z-index: 2; left: 0; top: 0px;}*/
+
+
+
+
+.flex-direction-nav li{ margin-bottom: 0;}
+.flex-direction-nav a:before{ margin-top: 12px;}
+.left-align{ text-align: left !important; }
+.flexslider{ margin: 0 !important; border: 0; }
+.locator-anm{ position: fixed; width: 95px; height: 130px; top: 150px; right: 70px; background: rgba(0, 0, 0, 0.8); z-index: 99;}
+.awareness-activities{  position: fixed; width: 95px; height: 130px; top: 286px; right: 71px; background: rgba(0, 0, 0, 0.8); z-index: 99;font-size-adjust: 0.41;font-family:open_sansregular;font-color:#fff;}
+.pdf-view-container.activityonhome{ margin:0; min-height: 400px; max-height: 550px; overflow-y: auto; }
+.pdf-view-container.activityonhome .inr-page-wpr{ margin:0; }
+.form-cntr label{ color: #333; font-family: 'abelregular'; font-size: 16px; font-weight: 400;}
+.form-cntr input[type=text], .form-cntr input[type=email], .form-cntr input[type=tel], .form-cntr input[type=number], input[type=search], .form-cntr textarea, .form-cntr select, .error-search input[type=text]
+{ padding: 5px 7px; display: inline-block; width: 100%; border: 1px solid #ccc; margin: 2px 0 5px 0; font-family: 'open_sansregular';}
+.form-cntr textarea{ height: 130px; }
+.required{ color: red; }
+span.wpcf7-list-item{ margin: 0 1em 0 0; }
+.aimages img{margin-right: 10px;margin-bottom: 10px;}
+ ul.tabs1.activities-tabs li{ padding-left: 23px; }
+ ul.tabs1.activities-tabs li:after { position: absolute; left: 7px; content: "\f101"; font: normal normal normal 16px/1 FontAwesome; top: 29%; color: #22c82c;}
+ .nodatafound{ margin-left: 15px; display:block;}
+ .testimonial-section{ padding-bottom: 50px; }
+ .testimonila-wpr{ margin-bottom: 20px; }
+
+ #accessible .common-right ul li.ico-accessibility ul li a.high-contrast.dark{ background: #000;}
+#accessible .common-right ul li.ico-accessibility ul li a:hover,
+#accessible .common-right ul li.ico-social ul li:hover { background: #555;}
+ul.tabs1.activities-tabs.download-tab li:after{ content: ""; display: none; }
+.searchbar-cntr{ background: #44dc4d; padding: 10px; margin-bottom: 25px;}
+.searchbar-cntr .screen-reader-text{ display: inline-block; margin-right: 10px; color: #004010; font-weight: 600; }
+.searchbar-cntr input[type=search]{ display: inline-block; width: 500px; }
+.searchbar-cntr input[type=submit]{ padding: 6px 12px; font-weight: 600;}
+.pagination_links{ text-align: center; display: inline-block; width: 100%; }
+.pagination_links .page-numbers{ text-decoration: none; display: inline-block; vertical-align: middle; background: #0b6311; padding: 4px 8px; color: #fff;}
+.pagination_links .page-numbers.current{ background: #ccc; color: #757575; }
+.pagination_links .page-numbers.prev, .pagination_links .page-numbers.next{ background: none; color: #0b6311; font-size: 14px;}
+
+.error-img{ -webkit-filter: drop-shadow(0px 0px 10px #222); filter: drop-shadow(0px 0px 10px #222);}
+.error-search{ display: inline-block; width: 100%; margin: 30px 0;}
+.error-search input[type=text]{ width: 40%; padding: 12px;}
+.error-search input[type=submit]{ margin: 0px 0 0 -5px; padding: 11px 20px 12px 20px; font-size: 1em;}
+.error-btn{ margin: 40px 0; font-size: 1em; display: inline-block; padding: 10px 20px; background: #575863; border-color: #4f4f58;}
+.gallery-cntr .glry-cagegory{ float: left; width: calc(33.33% - 15px); margin-left: 15px; margin-bottom: 15px; position: relative; overflow: hidden;}
+.gallery-cntr .glry-cagegory img{ width: 100%; height:220px; float: left; transition: all 1s ease; -moz-transition: all 1s ease; -ms-transition: all 1s ease; -webkit-transition: all 1s ease; -o-transition: all 1s ease;}
+.gallery-cntr .glry-cagegory .catg-title{ display: inline-block; width: 100%; color: #fff; border: 1px solid rgba(0, 0, 0, 0.62); border-top: none; padding: 10px; background: #159131; font-size: 1em; text-align: center; z-index: 1; position: relative;}
+.gallery-cntr .glry-cagegory .gal-thum-overlay{ display: none; align-items: center; position: absolute; left: 0; top: 0; right: 0; bottom: 0; background: rgba(19, 166, 56, 0.63); text-align: center; color: #fff;}
+.gallery-cntr .glry-cagegory:hover .gal-thum-overlay{ display: grid;}
+.gallery-cntr .glry-cagegory:hover img{ -ms-transform: rotate(7deg)  scale(1.2); -moz-transform: rotate(7deg)  scale(1.2); -webkit-transform: rotate(7deg)  scale(1.2); -o-transform: rotate(7deg)  scale(1.2); transform: rotate(7deg)  scale(1.2);}
+.gallery-cntr .glry-cagegory .gal-thum-overlay i{ font-size: 22px; }
+.gallery-cntr .glry-cagegory .gal-thum-overlay h4{ padding-top: 10px; }
+.inr-page-wpr ul, .inr-page-wpr ol{ padding-left:20px;}
+.dif-brandlogo ul, .document-link-cntr ul, .download-list-cntr ul{ padding-left:inherit; }
+.dif-brandlogo li, .document-link-cntr li, .download-list-cntr li{ list-style:none;}
+/*.inr-page-wpr li { list-style-type:inherit;}
+.inr-page-wpr ul li { list-style-type:disc;}
+*/
+.button-primary.resetpwd{ display: inline-block; width: inherit; }
+
+.mobile-nav {
+	display: none;
+	width: 36px;
+	height: 27px;
+	position: relative;
+	float: right;
+	margin:8px 0;
+}
+
+.mobile-nav span {
+	display: block;
+	background: #149131;
+	width: 36px;
+	height: 4px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+}
+.mobile-nav span:nth-child(2) {
+	top: 11px;
+	opacity: 1;
+}
+.mobile-nav span:nth-child(3) {
+	top: 22px;
+}
+
+.pagination {
+	text-align: center;
+	padding:20px 0;
+}
+
+/* Manidip @ 12.03.18*/
+.col-min-height [class^="col-"]{
+    min-height: 220px;
+}
+.gallery-thumb.creative-thumb p {
+    min-height: 40px;
+}
+
+.page-numbers {
+	display: inline-block;
+	color: #ffffff;
+	background-color: #000000;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 50%;
+	text-decoration: none;
+	margin: 0 5px;
+	font-size: 16px;
+}
+.page-numbers.current{
+	border: 1px solid #000000;
+	background-color: transparent ;
+	color:#000000;
+}
+
+.next.page-numbers, .prev.page-numbers {
+	width: auto;
+	height: auto;
+	color: #000000;
+	background-color: transparent;
+	border-radius: 0;
+}
+
+/*Responsive start*/
+@media screen and (max-width: 1250px){
+	.main-wrapper{ width: 980px;}
+	.contentOne{ min-height:210px;}
+	.area-cntr li{ margin:0 10px;}
+	.area-cntr li img {	max-width: 72px;}
+	.area-cntr li p {	font-size: 1.1em; height: 35px; }
+	.aimages img{ max-width:280px;}
+	.location-itemcntr{ width:150px; height:150px;}
+	.location-itemcntr img {	max-width: 100px;}
+	.flex-wrap-item p{ font-size:1em; line-height:20px;}
+	.goal-wpr big{ font-size:3em; margin:15px 0;}
+	.testo-wdgt-cntr {width: calc(100% - 20px);	height: 300px;	margin-left: 10px;	margin-right: 10px;}
+	.testimonila-wpr {	margin-left: -18px;	margin-top: 40px;}
+	.social-cntr img {	max-width: 35px;}
+	.social-cntr{ margin-top:18px;}
+	footer{ border-top:5px solid #FCEE21;}
+	.footer-nav li{ margin:0;}
+	.contentOne p, .contentTwo p {	font-size: 1.15em;	line-height: 25px;}
+	#nav .main-menu ul > li:hover > .sub-menu {	visibility: visible;}
+	.video-section iframe{ height:400px;}
+	.title{ font-size:1.4em;}
+	.gallery-cntr .gallery-thumb{ height:200px;}
+	.locator-anm{ top:175px; right:50px;}
+	.awareness-activities{ top:175px; right:50px;}
+	
+}
+
+@media screen and (max-width: 1023px){
+	.main-wrapper{ width: 740px;}
+	.logo img:first-child {	max-width: 34px;}
+	.logo img:last-child {	max-width: 110px;}
+	.logo {	float: left;	width: 144px;	overflow: hidden;}
+	.header-rgt-section {	float: right;	width: calc(100% - 178px);}
+	header{ font-size:14px;}
+	.header-rgt-section img{ max-width:45px;}
+	.header-rgt-section img:last-child{ max-width:114px;}
+	#nav .nav-menu {	display: block;	flex-wrap: inherit;}
+	#nav .main-menu ul > li{ width:auto;}
+	.contentOne {	min-height: 240px;}	
+	.title{ font-size:1.2em;}
+	.area-cntr li {	margin: 0 30px 10px;}
+	.area-cntr li:first-child {	margin-left: 30px;}
+	.area-cntr li:last-child {	margin-right: 30px;}
+	.content-post h3{ font-size:14px;}
+	.author-location .author{ font-size:12px;}
+	.author-location{ margin-top:10px;}
+	.aimages img {	max-width: 200px;}
+	.content-post{ font-size:12px;}
+	.flex-wrap-item p {	font-size: 0.9em;	line-height: 20px;}
+	.location-itemcntr {	width: 120px;	height: 120px;}
+	.location-itemcntr img {	max-width: 75px; }
+	.goal-wpr big {	font-size: 2em;	margin: 10px 0;}
+	.testimonila-wpr{ margin-top:30px;}
+	.angle-border{ height:80px;}
+	#nav .main-menu ul > li .sub-menu li {	width: 100%;}
+	.video-section iframe{ height:300px;}
+	.testimonila-wpr{ margin-left:0;}
+	.testimonila-wpr .flex-control-paging li a{ width:100px;}
+	
+	.ctnt-wpr {	margin-top: 15px;}
+	p, li {	line-height: 20px;	font-size: 12px;}
+	.ctnt-wpr .row .col-3 p br{ display:none;}
+	.ctnt-wpr .row .col-3 p img{ display:block; margin:0 0 10px;}
+	
+	.inr-page-wpr .vertical-tabs ul{ padding-left:0;}
+	.your-states{ padding-right:15px;}
+	.your-states ul li a, ul.tabs1 li{ font-size:17px;}
+	
+	ul.tabs li{ padding:12px 22px;}
+	
+	.gallery-cntr .gallery-thumb{ width:calc(50% - 15px);}
+	.gallery-thumb.creative-thumb {	width: calc(25% - 15px);}
+	.locator-anm {	top: 260px;	right: 40px;}
+	
+	.awareness-activities {	top: 260px;	right: 20px;}
+}
+
+
+@media only screen and (min-width: 768px) {
+#nav .nav-menu{ display:flex !important;}
+}
+
+@media screen and (max-width: 767px){
+	.main-wrapper{ width:100%; padding:0 7px;}
+	.area-cntr li img {	max-width: 60px;}
+	.area-cntr li p {	font-size: 1em;	height: 30px;}
+	.area-cntr li {	margin: 0 30px 8px;}
+	.flex-wrap {	display: block;	flex-wrap: inherit;}
+	.flex-wrap-item{ margin:0 0 15px;}
+	.flex-wrap-item p br{ display:none;}
+	.mobile-nav { display:block;}
+	#nav .nav-menu {	display: none;	overflow: hidden;	position: absolute;	left: 0;	top: 100%;	width: 100%;}
+	.mobile-nav.active span:nth-child(1) {	width: 35px;	transform: rotate(45deg);	top: 11px;	left: 0px;}
+	.mobile-nav.active span:nth-child(2) {	opacity: 0;}
+	.mobile-nav.active span:nth-child(3) {	width: 35px;	transform: rotate(-45deg);	top: 11px;	left: 0px;}
+	#nav .main-menu ul > li{ width:100%; text-align:left; border:none; }
+	#nav .main-menu ul > li a{ background-color:#149131; border:none;}
+	#nav .sub-menu {	min-width: auto;	width: 100%;	visibility: visible;	position: static; background-color:transparent;
+	 border-top:1px solid rgba(255, 255, 255, 0.20);}
+	#nav .main-menu ul > li .sub-menu li {	border: none !important;}
+	#nav .main-menu ul > li .sub-menu li a{ background-color:rgba(20,145,49,0.5) !important; border-bottom:1px solid rgba(255,255,255,0.2);}
+	#nav .main-menu ul > li .sub-menu li:last-child a{ border-bottom:none;}
+	a:hover{ outline:none !important;}
+	.flex-wrap-item.goal-wpr {	margin: 0;}
+	.logo {	float: none;	margin: 10px auto;	display: block;}
+	.header-rgt-section {	float: none;	width: 100%; text-align:right;}
+	.header-rgt-section span{ float: left; text-align:left;}
+	.ctnt-wpr .row .col-3{ width:100%; float:none;}
+	.ctnt-wpr .row .col-3 p:last-child{ margin-bottom:20px;}
+	
+	h2.inr-sub-title{ font-size:1em;}
+	
+	.inr-page-wpr .title.inner-title .button {	position: relative;	top: -2px;}
+	.form-cntr{ width:500px; margin:25px auto;}
+	
+	.gallery-cntr .glry-cagegory, .gallery-cntr .gallery-thumb{ width:calc(50% - 15px);}
+	.gallery-thumb.creative-thumb {	width: calc(20% - 15px); height:auto;}
+	
+	.document-link-cntr .col-3{ float:none; width:100%;}
+	.testimonila-wpr .flex-control-paging li a {	width: 25px;}
+	.col-2.contentOne{ float:none; width:100%; min-height:inherit; padding:20px 0; }
+	.right-border::after{ content:none;}
+	.contentOne p, .contentTwo p {	font-size: 1em;	line-height: 23px;}
+	
+}
+
+@media screen and (max-width: 600px){
+	.header-rgt-section span {	float: none;	text-align: center;	display: block;}
+	.header-rgt-section img{ display:none;}
+	.footer-nav li a{ font-size:12px; padding:0 5px;}
+	.social-cntr img {	max-width: 30px;}
+	.social-cntr a{ margin:0 3px;}
+	
+	.inr-page-wpr .title.inner-title {	padding: 6px 8px;	font-size: 1.05em;}
+	.dif-brandlogo a img {	height: 40px;}
+	
+	.your-states {	padding-right: 0;	float: none;	width: 100%; min-height:225px;}
+	.actvty-your-city {	float: none;	width: 100%;	padding: 15px 20px;	min-height: inherit;}
+	.actvty-your-city::before {	border-top: 3px solid #ccc; border-left:none; width: 100%;}
+	.vertical-tabs .tab_container.actvty-your-city{ min-height:inherit;}
+	.form-cntr{ width:360px; margin:20px auto;}
+	
+	.inr-page-wpr .ctnt-wpr ul{ padding-left:0;}
+	.inr-page-wpr .ctnt-wpr ul.tabs{ height:auto; float:none;}
+	.inr-page-wpr .ctnt-wpr ul.tabs li{ float:none; display:block; border-right:1px solid #666;}
+	.gallery-cntr .glry-cagegory, .gallery-cntr .gallery-thumb{ width:100%; margin:0 0 15px;}
+	.gallery-thumb.creative-thumb{ width:50%; margin:10px auto; display:block; float:none; height:auto;}
+	
+	.locator-anm {right: 20px;}
+}
+
+@media screen and (max-width: 400px){
+	.dif-brandlogo li{ display:block; }
+	.dif-brandlogo a{ margin-right:0;}
+	.form-cntr{ width:300px; padding:15px;}
+}
+
+@media screen and (max-width: 380px){
+	#accessible .common-left ul li{ float:none;}
+	#accessible .common-left ul li.ministry{ padding-left:0;}
+	#accessible .common-right ul li a{ width:30px;}
+	#accessible .common-right ul li.ico-skip > a {	background-position: -128px 7px !important;}
+	#accessible .common-right ul li.ico-accessibility > a {	background-position: 3px 7px !important;}
+	#accessible .common-right ul li.ico-site-search > a {	background-position: -62px 7px !important;}
+	
+	#accessible .common-right ul li.ico-site-search.hover > a, #accessible .common-right ul li.ico-site-search > a:focus {
+	background-position: -62px -27px !important;}
+	#accessible .common-right ul li.ico-accessibility.hover > a, #accessible .common-right ul li.ico-accessibility > a:focus {
+	background-position: 3px -27px !important;}
+	#accessible .common-right ul li.ico-skip.hover > a, #accessible .common-right ul li.ico-skip > a:focus {
+	background-position: -128px -27px !important;}
+	
+	#accessible .common-right ul li.ico-accessibility ul li a{ width:30px;}
+}
+
+@media screen and (max-width: 360px){
+.form-cntr{ width:100%;}
+}
+
+@media screen and (max-width: 330px){
+	#accessible .common-left{ display:none;}
+}
+.column {
+    float: left;
+    width: 23%;
+	min-height:140px;
+	border: 1px solid #ccc;
+	padding:12px;
+	margin:2px;
+	background-color: #F5F5F5;
+	
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*By fawwad for visitor count*/
+#footer-sidebar {
+display:block;
+}
+
+#footer-sidebar1 {
+float: left;
+width: 150px;
+margin-left:5px;
+margin-right:5px;
+color:#fff;
+}
+
+ul.states {
+list-style-type: none;
+}
+
+
+
+/*For jquery flex slider on home page*/
+
+
+.play_button
+       {
+       
+
+   float: right;
+   right: 10px;
+   /* width: 100%; */
+   /* left: 0px; */
+   position: absolute;
+   bottom: 5px;
+z-index:999;
+       }
+
+.btn-default {
+   color: #333;
+   background-color: #fff;
+   border-color: #ccc;
+}
+.btn-xs, .btn-group-xs > .btn {
+   padding: 1px 5px;
+   font-size: 12px;
+   line-height: 1.5;
+   border-radius: 3px;
+}
+.btn {
+   display: inline-block;
+   padding: 6px 12px;
+   margin-bottom: 0;
+   font-size: 14px;
+   font-weight: normal;
+   line-height: 1.42857143;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: middle;
+   -ms-touch-action: manipulation;
+   touch-action: manipulation;
+   cursor: pointer;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 4px;
+}
+
+g{
+	font-size: 13px;
+}
+
+
+/*Media Query*/
+
+
+@media only screen and (max-width:339px)
+{
+g{
+	font-size: 5px;
+}
+.header-lft-section 
+{
+    float: left!important;
+    width: 55%!important;
+    font-size: 13px!important;
+}
+
+.column{
+	width:48%! important;
+	height:148px;
+}
+body.inr-cntnt-bg 
+{
+    background-image: url(../images/greene-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	width: 100%;
+}
+.map-cntr
+{
+    float: left;
+	width: 100%;
+	position: relative;
+	background-repeat: no-repeat;
+}
+.img_mapin
+{
+    
+	width: 100%;
+}
+.state-details{
+    
+	width: 100%;
+}
+
+.map-cntr .states li.uttarakhand{ left: 77px; top: 44px;}
+.map-cntr .states li.gujarat{ left: 26px; top: 118px;}
+.map-cntr .states li.madhya_pradesh{ left: 56px; top: 127px;}
+.map-cntr .states li.haryana{ left: 61px; top: 58px;}
+.map-cntr .states li.rajasthan{ left: 37px; top: 84px;}
+.map-cntr .states li.tamil_nadu{ left: 80px; bottom: 31px;}
+.map-cntr .states li.west_bengal{ right: 53px; top: 127px;}
+.map-cntr .states li.odisha{ right: 94px; bottom: 111px;}
+.map-cntr .states li.maharashtra{ left: 40px; bottom: 103px;}
+.map-cntr .states li.karnataka{ left: 54px; bottom: 43px;}
+.map-cntr .states li.uttar_pradesh{ left: 100px; top: 83px;}
+.map-cntr .states li.manipur{ right: 9px; top: 103px;}
+.map-cntr .states li.chhattisgarh{ left: 97px; top: 139px;}
+.map-cntr .states li.telangana{ left: 89px; bottom: 93px;}
+.map-cntr .states li.daman_and_diu{ left: 17px; bottom: 124px;}
+.map-cntr .states li.jammu_and_kashmir{ left: 36px; top: 6px;}
+.map-cntr .states li.punjab{ left: 45px; top: 48px;}
+.map-cntr .states li.himachal_pradesh{ left: 52px; top: 25px;}
+.map-cntr .states li.arunachal_pradesh{ right: -35px; top: 70px;} 
+.map-cntr .states li.bihar{ left: 147px; top: 93px;}
+.map-cntr .states li.lakshadweep{ left: -12px; bottom: 25px;}
+.map-cntr .states li.kerala{ left: 57px; bottom: 26px;}
+.map-cntr .states li.mizoram{ right: 19px; top: 120px;}
+.map-cntr .states li.andaman_and_nicobar_islands{ right: -30px; bottom: 51px;}
+.map-cntr .states li.puducherry{ left: 82px; bottom: 61px;}
+.map-cntr .states li.sikkim{ right: 64px; top: 66px;}
+.map-cntr .states li.meghalaya{ right: 27px; top: 110px;}
+.map-cntr .states li.andhra_pradesh{ left: 62px; bottom: 79px;}
+.map-cntr .states li.goa{ left: 48px; bottom: 72px;}
+.map-cntr .states li.delhi{ left: 87px; top: 71px;}
+.map-cntr .states li.tripura{ right: 41px; top: 94px;}
+.map-cntr .states li.nagaland{ right: 0px; top: 82px;}
+.map-cntr .states li.assam{ right: 22px; top: 89px;}
+.map-cntr .states li.jharkhand{ right: 86px; top: 119px;}
+
+
+.map-cntr .states li{ position: absolute; font-size: 10px; text-align: center; cursor: pointer;}
+.map-cntr .states li img{ margin-top: -4px; transition: 0.2s ease-in;}
+.map-cntr .states li:hover img{ transform: scale(1.3, 1.3);}
+.map-cntr .states li.ladhak{ left: 110px; top: 40px;}
+.map-cntr .states li.uttaranchal{ left: 179px; top: 113px;display: none;}
+/*.map-cntr .states li.arunachal_pradesh{ right: 0px; top: 140px;} */
+.map-cntr .states li.chandigarh{ left: 122px; top: 88px;}
+.map-cntr .states li.dadra_and_nagar_haveli{ left: 30px; bottom: 210px;}
+
+.map-cntr .states li.hide{ display: none !important;}
+
+}
+
+
+@media only screen and (max-width:374px) and (min-width:340px)
+{
+g{
+	font-size: 6px;
+}
+.header-lft-section 
+{
+    float: left!important;
+    width: 60%!important;
+    font-size: 13px!important;
+}
+.column{
+	width:48%! important;
+	height:148px;
+}
+body.inr-cntnt-bg 
+{
+    background-image: url(../images/greene-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	width: 100%;
+}
+.map-cntr
+{
+    float: left;
+	width: 100%;
+	position: relative;
+	background-repeat: no-repeat;
+}
+.img_mapin
+{
+    
+	width: 100%;
+}
+.state-details{
+    
+	width: 100%;
+}
+.map-cntr .states li.uttarakhand{ left: 96px; top: 55px;}
+.map-cntr .states li.gujarat{ left: 29px; top: 138px;}
+.map-cntr .states li.madhya_pradesh{ left: 49px; top: 129px;}
+.map-cntr .states li.haryana{ left: 61px; top: 68px;}
+.map-cntr .states li.rajasthan{ left: 37px; top: 96px;}
+.map-cntr .states li.tamil_nadu{ left: 97px; bottom: 39px;}
+.map-cntr .states li.west_bengal{ right: 65px; top: 146px;}
+.map-cntr .states li.odisha{ right: 105px; bottom: 138px;}
+.map-cntr .states li.maharashtra{ left: 45px; bottom: 119px;}
+.map-cntr .states li.karnataka{ left: 67px; bottom: 52px;}
+.map-cntr .states li.uttar_pradesh{ left: 112px; top: 90px;}
+.map-cntr .states li.manipur{ right: 13px; top: 120px;}
+.map-cntr .states li.chhattisgarh{ left: 114px; top: 157px;}
+.map-cntr .states li.telangana{ left: 120px; bottom: 115px;}
+.map-cntr .states li.jammu_and_kashmir{ left: 47px; top: 14px;}
+.map-cntr .states li.arunachal_pradesh{ right: -37px; top: 85px;} 
+.map-cntr .states li.nagaland{ right: -3px; top: 97px;}
+.map-cntr .states li.assam{ right: 23px; top: 104px;}
+.map-cntr .states li.andaman_and_nicobar_islands{ right: -22px; bottom: 61px;}
+.map-cntr .states li.puducherry{ left: 94px; bottom: 71px;}
+.map-cntr .states li.mizoram{ right: 23px; top: 146px;}
+.map-cntr .states li.meghalaya{ right: 33px; top: 129px;}
+.map-cntr .states li.tripura{ right: 45px; top: 110px;}
+.map-cntr .states li.himachal_pradesh{ left: 64px; top: 33px;}
+.map-cntr .states li.daman_and_diu{ left: 19px; bottom: 152px;}
+.map-cntr .states li.kerala{ left: 76px; bottom: 26px;}
+.map-cntr .states li.lakshadweep{ left: 9px; bottom: 30px;}
+.map-cntr .states li.goa{ left: 57px; bottom: 86px;}
+.map-cntr .states li.sikkim{ right: 76px; top: 85px;}
+.map-cntr .states li.bihar{ left: 163px; top: 103px;}
+.map-cntr .states li.andhra_pradesh{ left: 77px; bottom: 94px;}
+.map-cntr .states li.delhi{ left: 96px; top: 77px;}
+.map-cntr .states li.punjab{ left: 49px; top: 59px;}
+.map-cntr .states li.jharkhand{ right: 106px; top: 130px;}
+
+
+.map-cntr .states li{ position: absolute; font-size: 10px; text-align: center; cursor: pointer;}
+.map-cntr .states li img{ margin-top: -4px; transition: 0.2s ease-in;}
+.map-cntr .states li:hover img{ transform: scale(1.3, 1.3);}
+.map-cntr .states li.ladhak{ left: 110px; top: 40px;}
+.map-cntr .states li.uttaranchal{ left: 179px; top: 113px;display: none;}
+/*.map-cntr .states li.arunachal_pradesh{ right: 0px; top: 140px;} */
+.map-cntr .states li.chandigarh{ left: 122px; top: 88px;}
+.map-cntr .states li.dadra_and_nagar_haveli{ left: 30px; bottom: 210px;}
+
+.map-cntr .states li.hide{ display: none !important;}
+
+}
+@media only screen and (max-width:398px) and (min-width:375px) 
+{
+g{
+	font-size: 7px;
+}
+.header-lft-section 
+{
+    float: left!important;
+    width: 60%!important;
+    font-size: 13px!important;
+}	
+.column{
+	width:48%! important;
+	height:148px;
+}
+	
+.inner-cntr{
+	width:100%
+}
+
+.inr-page-wpr{
+	width:100%
+}
+
+body.inr-cntnt-bg 
+{
+     background-image: url(../images/greene-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	width: 100%;
+}
+
+.map-cntr
+{
+    float: left;
+	width: 100%;
+	position: relative;
+	background-repeat: no-repeat;
+}
+
+.img_mapin
+{
+    
+	width: 100%;
+}
+.state-details{
+    
+	width: 100%;
+}
+.map-cntr .states li.uttarakhand{ left: 101px; top: 59px;}
+.map-cntr .states li.gujarat{ left: 34px; top: 150px;}
+.map-cntr .states li.uttar_pradesh{ left: 118px; top: 92px;}
+.map-cntr .states li.haryana{ left: 63px; top: 72px;}
+.map-cntr .states li.rajasthan{ left: 45px; top: 116px;}
+.map-cntr .states li.tamil_nadu{ left: 98px; bottom: 34px;}
+.map-cntr .states li.karnataka{ left: 69px; bottom: 55px;}
+.map-cntr .states li.manipur{ right: 13px; top: 127px;}
+.map-cntr .states li.maharashtra{ left: 56px; bottom: 129px;}
+.map-cntr .states li.madhya_pradesh{ left: 79px; top: 143px;}
+.map-cntr .states li.odisha{ right: 113px; bottom: 141px;}
+.map-cntr .states li.telangana{ left: 116px; bottom: 120px;}
+.map-cntr .states li.west_bengal{ right: 72px; top: 156px;}
+.map-cntr .states li.chhattisgarh{ left: 119px; top: 173px;}
+
+.map-cntr:after{ content: ""; position: absolute; right: -115px;  background-repeat: no-repeat; background-position: center;}
+.map-cntr .states li{ position: absolute; font-size: 10px; text-align: center; cursor: pointer;}
+.map-cntr .states li img{ margin-top: -4px; transition: 0.2s ease-in;}
+.map-cntr .states li:hover img{ transform: scale(1.3, 1.3);}
+.map-cntr .states li.andaman_and_nicobar_islands{ right: -20px; bottom: 61px;}
+.map-cntr .states li.sikkim{ right: 79px; top: 88px;}
+.map-cntr .states li.daman_and_diu{ left: 22px; bottom: 150px;}
+.map-cntr .states li.mizoram{ right: 27px; top: 151px;}
+.map-cntr .states li.arunachal_pradesh{ right: -40px; top: 89px;} 
+.map-cntr .states li.goa{ left: 61px; bottom: 86px;}
+.map-cntr .states li.telangana{ left: 120px; bottom: 122px;}
+.map-cntr .states li.meghalaya{ right: 38px; top: 139px;}
+.map-cntr .states li.tripura{ right: 50px; top: 110px;}
+.map-cntr .states li.assam{ right: 30px; top: 104px;}
+.map-cntr .states li.nagaland{ right: 0px; top: 99px;}
+
+
+.map-cntr .states li.jammu_and_kashmir{ left: 47px; top: 14px;}
+.map-cntr .states li.puducherry{ left: 94px; bottom: 71px;}
+.map-cntr .states li.himachal_pradesh{ left: 64px; top: 33px;}
+.map-cntr .states li.kerala{ left: 76px; bottom: 26px;}
+.map-cntr .states li.lakshadweep{ left: 9px; bottom: 30px;}
+.map-cntr .states li.bihar{ left: 163px; top: 103px;}
+.map-cntr .states li.andhra_pradesh{ left: 77px; bottom: 94px;}
+.map-cntr .states li.delhi{ left: 96px; top: 77px;}
+.map-cntr .states li.punjab{ left: 49px; top: 59px;}
+.map-cntr .states li.jharkhand{ right: 106px; top: 130px;}
+
+
+
+
+.map-cntr .states li.ladhak{ left: 110px; top: 40px;}
+.map-cntr .states li.uttaranchal{ left: 179px; top: 113px;display: none;}
+/*.map-cntr .states li.arunachal_pradesh{ right: 0px; top: 140px;} */
+.map-cntr .states li.chandigarh{ left: 122px; top: 88px;}
+.map-cntr .states li.dadra_and_nagar_haveli{ left: 30px; bottom: 210px;}
+
+.map-cntr .states li.hide{ display: none !important;}
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:414px) and (min-width:399px) 
+{
+g{
+	font-size: 8px;
+}
+.header-lft-section 
+{
+    float: left!important;
+    width: 60%!important;
+    font-size: 13px!important;
+}
+	
+.inner-cntr{
+	width:100%
+}
+.column{
+	width:48%! important;
+	height:148px;
+}
+
+.inr-page-wpr{
+	width:100%
+}
+
+body.inr-cntnt-bg 
+{
+     background-image: url(../images/greene-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	width: 100%;
+}
+
+.map-cntr
+{
+    float: left;
+	width: 100%;
+	position: relative;
+	background-repeat: no-repeat;
+}
+
+.img_mapin
+{
+    
+	width: 100%;
+}
+.state-details{
+    
+	width: 100%;
+}
+.map-cntr .states li.uttarakhand{ left: 113px; top: 67px;}
+.map-cntr .states li.gujarat{ left: 37px; top: 159px;}
+.map-cntr .states li.uttar_pradesh{ left: 126px; top: 101px;}
+.map-cntr .states li.haryana{ left: 79px; top: 105px;}
+.map-cntr .states li.rajasthan{ left: 45px; top: 116px;}
+.map-cntr .states li.tamil_nadu{ left: 114px; bottom: 47px;}
+.map-cntr .states li.karnataka{ left: 82px; bottom: 66px;}
+.map-cntr .states li.manipur{ right: 17px; top: 143px;}
+.map-cntr .states li.maharashtra{ left: 52px; bottom: 140px;}
+.map-cntr .states li.madhya_pradesh{ left: 79px; top: 154px;}
+.map-cntr .states li.odisha{ right: 120px; bottom: 156px;}
+.map-cntr .states li.telangana{ left: 135px; bottom: 128px;}
+.map-cntr .states li.west_bengal{ right: 82px; top: 170px;}
+.map-cntr .states li.chhattisgarh{ left: 139px; top: 190px;}
+.map-cntr .states li.jammu_and_kashmir{ left: 61px; top: 19px;}
+.map-cntr .states li.arunachal_pradesh{ right: -34px; top: 97px;} 
+.map-cntr .states li.nagaland{ right: 4px; top: 119px;}
+.map-cntr .states li.assam{ right: 32px; top: 126px;}
+.map-cntr .states li.andaman_and_nicobar_islands{ right: -15px; bottom: 76px;}
+.map-cntr .states li.mizoram{ right: 32px; top: 170px;}
+.map-cntr .states li.meghalaya{ right: 46px; top: 157px;}
+.map-cntr .states li.tripura{ right: 59px; top: 141px;}
+.map-cntr .states li.sikkim{ right: 92px; top: 101px;}
+.map-cntr .states li.bihar{ left: 193px; top: 134px;}
+.map-cntr .states li.punjab{ left: 60px; top: 86px;}
+.map-cntr .states li.daman_and_diu{ left: 30px; bottom: 173px;}
+.map-cntr .states li.himachal_pradesh{ left: 83px; top: 42px;}
+.map-cntr .states li.kerala{ left: 90px; bottom: 39px;}
+.map-cntr .states li.lakshadweep{ left: 15px; bottom: 47px;}
+.map-cntr .states li.puducherry{ left: 117px; bottom: 78px;}
+.map-cntr .states li.goa{ left: 67px; bottom: 102px;}
+.map-cntr .states li.jharkhand{ right: 128px; top: 162px;}
+.map-cntr .states li.delhi{ left: 121px; top: 112px;}
+.map-cntr .states li.andhra_pradesh{ left: 101px; bottom: 107px;}
+
+
+.map-cntr:after{ content: ""; position: absolute; right: -115px;  background-repeat: no-repeat; background-position: center;}
+.map-cntr .states li{ position: absolute; font-size: 10px; text-align: center; cursor: pointer;}
+.map-cntr .states li img{ margin-top: -4px; transition: 0.2s ease-in;}
+.map-cntr .states li:hover img{ transform: scale(1.3, 1.3);}
+.map-cntr .states li.ladhak{ left: 110px; top: 40px;}
+.map-cntr .states li.uttaranchal{ left: 179px; top: 113px;display: none;}
+/*.map-cntr .states li.arunachal_pradesh{ right: 0px; top: 140px;} */
+.map-cntr .states li.chandigarh{ left: 122px; top: 88px;}
+.map-cntr .states li.dadra_and_nagar_haveli{ left: 30px; bottom: 210px;}
+
+.map-cntr .states li.hide{ display: none !important;}
+
+}
+
+
+@media only screen and (max-width:780px) and (min-width:415px) 
+{
+g{
+	font-size: 10px;
+}
+.header-lft-section 
+{
+    float: left!important;
+    width: 60%!important;
+    font-size: 13px!important;
+}
+.column{
+	
+	height:145px;
+}
+.inner-cntr{
+	width:100%
+}
+
+.inr-page-wpr{
+	width:100%
+}
+
+body.inr-cntnt-bg 
+{
+     background-image: url(../images/greene-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	width: 100%;
+}
+
+.map-cntr
+{
+    float: left;
+	width: 100%;
+	position: relative;
+	background-repeat: no-repeat;
+}
+
+.img_mapin
+{
+    
+	width: 100%;
+}
+.state-details{
+    
+	width: 100%;
+}
+.map-cntr .states li.uttarakhand{ left: 263px; top: 165px;}
+.map-cntr .states li.gujarat{ left: 92px; top: 352px;}
+.map-cntr .states li.uttar_pradesh{ left: 278px; top: 241px;}
+.map-cntr .states li.haryana{ left: 180px; top: 203px;}
+.map-cntr .states li.rajasthan{ left: 103px; top: 241px;}
+.map-cntr .states li.tamil_nadu{ left: 244px; bottom: 99px;}
+.map-cntr .states li.karnataka{ left: 201px; bottom: 128px;}
+.map-cntr .states li.manipur{ right: 58px; top: 321px;}
+.map-cntr .states li.maharashtra{ left: 136px; bottom: 292px;}
+.map-cntr .states li.madhya_pradesh{ left: 178px; top: 336px;}
+.map-cntr .states li.odisha{ right: 264px; bottom: 323px;}
+.map-cntr .states li.telangana{ left: 267px; bottom: 282px;}
+.map-cntr .states li.west_bengal{ right: 202px; top: 373px;}
+.map-cntr .states li.chhattisgarh{ left: 287px; top: 420px;}
+
+.map-cntr:after{ content: ""; position: absolute; right: -115px;  background-repeat: no-repeat; background-position: center;}
+.map-cntr .states li{ position: absolute; font-size: 12px; text-align: center; cursor: pointer;}
+.map-cntr .states li img{ margin-top: -4px; transition: 0.2s ease-in;}
+.map-cntr .states li:hover img{ transform: scale(1.3, 1.3);}
+.map-cntr .states li.jammu_and_kashmir{ left: 161px; top: 57px;}
+.map-cntr .states li.punjab{ left: 152px; top: 148px;}
+.map-cntr .states li.himachal_pradesh{ left: 202px; top: 124px;}
+.map-cntr .states li.arunachal_pradesh{ right: -35px; top: 244px;} 
+.map-cntr .states li.nagaland{ right: 35px; top: 274px;}
+.map-cntr .states li.mizoram{ right: 86px; top: 373px;}
+.map-cntr .states li.meghalaya{ right: 112px; top: 342px;}
+.map-cntr .states li.tripura{ right: 126px; top: 291px;}
+.map-cntr .states li.assam{ right: 82px; top: 285px;}
+.map-cntr .states li.jharkhand{ right: 266px; top: 360px;}
+.map-cntr .states li.sikkim{ right: 195px; top: 236px;}
+.map-cntr .states li.bihar{ left: 391px; top: 287px;}
+.map-cntr .states li.andaman_and_nicobar_islands{ right: 36px; bottom: 157px;}
+.map-cntr .states li.daman_and_diu{ left: 83px; bottom: 353px;}
+.map-cntr .states li.andhra_pradesh{ left: 224px; bottom: 220px;}
+.map-cntr .states li.puducherry{ left: 253px; bottom: 162px;}
+.map-cntr .states li.goa{ left: 154px; bottom: 180px;}
+.map-cntr .states li.lakshadweep{ left: 81px; bottom: 97px;}
+.map-cntr .states li.delhi{ left: 240px; top: 215px;}
+.map-cntr .states li.kerala{ left: 187px; bottom: 78px;}
+
+.map-cntr .states li.ladhak{ left: 110px; top: 40px;}
+.map-cntr .states li.uttaranchal{ left: 179px; top: 113px;display: none;}
+/*.map-cntr .states li.arunachal_pradesh{ right: 0px; top: 140px;} */
+.map-cntr .states li.chandigarh{ left: 122px; top: 88px;}
+.map-cntr .states li.dadra_and_nagar_haveli{ left: 30px; bottom: 210px;}
+
+.map-cntr .states li.hide{ display: none !important;}
+
+}
+
+@media only screen and (max-width:991px) and (min-width:781px) 
+{
+.header-lft-section 
+{
+    float: left!important;
+    width: 60%!important;
+    font-size: 13px!important;
+}
+	
+.inner-cntr{
+	width:100%
+}
+
+.inr-page-wpr{
+	width:100%
+}
+
+body.inr-cntnt-bg 
+{
+     background-image: url(../images/greene-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	width: 100%;
+}
+
+.map-cntr
+{
+    float: left;
+	width: 100%;
+	position: relative;
+	background-repeat: no-repeat;
+}
+
+.img_mapin
+{
+    
+	width: 100%;
+}
+.state-details{
+    
+	width: 100%;
+}
+.map-cntr .states li.uttarakhand{ left: 263px; top: 165px;}
+.map-cntr .states li.gujarat{ left: 92px; top: 352px;}
+.map-cntr .states li.uttar_pradesh{ left: 278px; top: 241px;}
+.map-cntr .states li.haryana{ left: 173px; top: 214px;}
+.map-cntr .states li.rajasthan{ left: 103px; top: 241px;}
+.map-cntr .states li.tamil_nadu{ left: 244px; bottom: 99px;}
+.map-cntr .states li.karnataka{ left: 201px; bottom: 128px;}
+.map-cntr .states li.manipur{ right: 58px; top: 321px;}
+.map-cntr .states li.maharashtra{ left: 136px; bottom: 292px;}
+.map-cntr .states li.madhya_pradesh{ left: 178px; top: 336px;}
+.map-cntr .states li.odisha{ right: 264px; bottom: 323px;}
+.map-cntr .states li.telangana{ left: 267px; bottom: 282px;}
+.map-cntr .states li.west_bengal{ right: 202px; top: 373px;}
+.map-cntr .states li.chhattisgarh{ left: 287px; top: 420px;}
+
+.map-cntr:after{ content: ""; position: absolute; right: -115px;  background-repeat: no-repeat; background-position: center;}
+.map-cntr .states li{ position: absolute; font-size: 10px; text-align: center; cursor: pointer;}
+.map-cntr .states li img{ margin-top: -4px; transition: 0.2s ease-in;}
+.map-cntr .states li:hover img{ transform: scale(1.3, 1.3);}
+.map-cntr .states li.jammu_and_kashmir{ left: 110px; top: 37px;}
+.map-cntr .states li.ladhak{ left: 110px; top: 40px;}
+.map-cntr .states li.punjab{ left: 104px; top: 102px;}
+.map-cntr .states li.himachal_pradesh{ left: 137px; top: 79px;}
+
+.map-cntr .states li.uttaranchal{ left: 179px; top: 113px;display: none;}
+.map-cntr .states li.bihar{ left: 277px; top: 205px;}
+.map-cntr .states li.jharkhand{ right: 190px; top: 247px;}
+.map-cntr .states li.assam{ right: 52px; top: 196px;;}
+.map-cntr .states li.puducherry{ left: 175px; bottom: 105px;}
+.map-cntr .states li.delhi{ left: 168px; top: 143px;}
+.map-cntr .states li.goa{ left: 98px; bottom: 135px;}
+.map-cntr .states li.andhra_pradesh{ left: 155px; bottom: 150px;}
+.map-cntr .states li.kerala{ left: 129px; bottom: 55px;}
+.map-cntr .states li.sikkim{ right: 137px; top: 160px;}
+.map-cntr .states li.meghalaya{ right: 75px; top: 233px;}
+.map-cntr .states li.tripura{ right: 87px; top: 202px;}
+.map-cntr .states li.mizoram{ right: 57px; top: 260px;}
+.map-cntr .states li.nagaland{ right: 20px; top: 187px;}
+.map-cntr .states li.arunachal_pradesh{ right: -41px; top: 162px;} 
+/*.map-cntr .states li.arunachal_pradesh{ right: 0px; top: 140px;} */
+.map-cntr .states li.chandigarh{ left: 122px; top: 88px;}
+.map-cntr .states li.daman_and_diu{ left: 50px; bottom: 245px;}
+.map-cntr .states li.dadra_and_nagar_haveli{ left: 30px; bottom: 210px;}
+.map-cntr .states li.lakshadweep{ left: 50px; bottom: 60px;}
+.map-cntr .states li.andaman_and_nicobar_islands{ right: 15px; bottom: 85px;}
+
+.map-cntr .states li.hide{ display: none !important;}
+
+}
+
+#playButton:focus{
+border-style:solid;
+border-width:5px;
+border-color:green !important;
+}
+#pauseButton:focus
+{
+border-style:solid;
+border-width:5px;
+border-color:green !important;
+}
+
+
+
+
+
+
+
